@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Sweet Place</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff8e1;
+      color: #333;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-image: url('https://images.unsplash.com/photo-1606914469639-d5640d58b2c6');
+      background-size: cover;
+      background-position: center;
+      padding: 100px 20px;
+      text-align: center;
+      color: #bf360c;
+    }
+
+    .hero h1 {
+      font-size: 60px;
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-top: 10px;
+	  color:blue;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background-color: #f57c00;
+      padding: 15px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffe082;
+    }
+
+    /* Section Base */
+    .section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      font-family: 'Pacifico', cursive;
+      color: #e65100;
+    }
+
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+      padding: 0 10px;
+    }
+
+    .item {
+      background-color: #fff3e0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .item:hover {
+      transform: translateY(-5px);
+    }
+
+    .item img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .item h4 {
+      font-size: 20px;
+      padding: 10px;
+      color: #bf360c;
+    }
+
+    .item button {
+      background-color: #e65100;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .item button:hover {
+      background-color: #ff7043;
+    }
+
+    /* About Section */
+    #about p {
+      max-width: 800px;
+      margin: auto;
+      line-height: 1.6;
+      font-size: 18px;
+    }
+
+    /* Footer (optional) */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #ffe0b2;
+      color: #6d4c41;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Hero Section -->
+<section class="hero" id="home">
+  <h1>Indian Sweet Place</h1>
+  <p>“Bringing the taste of tradition to your doorstep”</p>
+</section>
+
+<!-- Navigation -->
+<nav>
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#about">About</a></li>
+  </ul>
+</nav>
+
+<!-- Order Section -->
+<section id="order" class="section">
+  <h2>Our Sweets</h2>
+  <div class="items">
+    <!-- Sweet Cards -->
+    <div class="item">
+      <img src="https://media.istockphoto.com/id/1188000132/photo/gulab-jamun-in-clay-pot-indian-dessert-or-sweet-dish.jpg?s=612x612&w=0&k=20&c=xznugvp3ksuTEnRdbGxGY-mc7ZID0tLMDkBAl_j-eF8=">
+      <h4>Gulab Jamun</h4>
+      <button>Order</button>
+    </div>
+    <div class="item">
+      <img src="https://media.istockphoto.com/id/521249695/photo/habshi-halwa-6.jpg?s=612x612&w=0&k=20&c=w1KJRcghi4tGHRBYa8cfNsHCJM1E3zu07Az_jZkS9YE=">
+      <h4>Halwa</h4>
+      <button>Order</button>
+    </div>
+
+    <div class="item">
+<img src="https://media.istockphoto.com/id/982302046/photo/rava-ladoo-or-semolina-laddu-with-cashew-nut-topping-popular-festival-food-from-india-served.jpg?s=612x612&w=0&k=20&c=zie1qpVL8Ye7vVNtIArRWBCi4dT_UVrl5d3x2c0gisk=">
+<h4> RAVA LADOO </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/1411786526/photo/rasmalai.jpg?s=612x612&w=0&k=20&c=0WzEpwBAmZ6HoiAdH5h1MywksKDVlIotntUj8e2wxz0=">
+<h4> RASMALAI </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/1435342762/photo/dry-fruits-sweet-box.jpg?s=612x612&w=0&k=20&c=dt8y3EvFRRmZwxSwHpDz2HBbPmohn3QRtTkeccTQ5Q4=">
+<h4> DRY FRUITS SWEET</h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/482375068/photo/rasgulla-an-indian-sweet.jpg?s=612x612&w=0&k=20&c=IXaoQqudYdD621hrec-kPWeNc6uFz3nc8NBLvzSIJTY=">
+<h4> RASGULLA </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/1338729862/photo/indian-sweet-laddu.jpg?s=612x612&w=0&k=20&c=umIZPC1tKxeBDVoqikytwcXpzCwrv3Mdp48PTcfuTAE=">
+<h4> SWEET LADDU </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/1336604759/photo/kozhukatta-pidi-in-golden-plate-indian-kerala-tea-time-snack-steamed-food-sweet-modak-rice.jpg?s=612x612&w=0&k=20&c=aFnglmNieJSgbzq3hAW7xbLlRU4sIBTOb7G-bdLN4Kw=">
+<h4> KOZHUKATTA </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/625851638/photo/indian-food-adhirasam.jpg?s=612x612&w=0&k=20&c=8mlmit85uMZx9QT5rhoZKKwtTMb8FjKQYLYhG7jNFvY=">
+<h4> ADHIRASAM </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/506625143/photo/kaju-katli-3.jpg?s=612x612&w=0&k=20&c=q4p0oAhCLNdEeKm8kArRcX7jKgJSmB_HaRzD5_nV7Lg=">
+<h4> KAJU KALTI </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/1080647932/photo/oats-laddu-or-ladoo-also-known-as-protein-energy-balls-served-in-a-plate-or-bowl-selective.jpg?s=612x612&w=0&k=20&c=_8yQ1Paq4Hr8A-lkpU0aBdmdhlCqV_Wzy5j5ZWxUtqI=">
+<h4> OATS LADDU </h4>
+<button> Order</button>
+</div>
+
+<div class="item">
+<img src="https://media.istockphoto.com/id/1159362325/photo/bread-pakora.jpg?s=612x612&w=0&k=20&c=93uILcInCMXroXgjEJYXNeUzWh5NASSrEnylAgW7hcs=">
+<h4>  BREAD PAKORA</h4>
+<button> Order</button>
+</div>
+
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section">
+  <h2>About Us</h2>
+  <p>
+    Indian Sweet Place is your one-stop destination for authentic, mouth-watering Indian desserts. We use time-tested recipes, traditional ingredients, and a whole lot of love. Whether you're celebrating a festival or just craving something sweet, we deliver joy with every bite.
+  </p>
+</section>
+
+<!-- Footer -->
+<footer>
+  &copy; 2025 Indian Sweet Place. All rights reserved.
+</footer>
+
+</body>
+</html>
